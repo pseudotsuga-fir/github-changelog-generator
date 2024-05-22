@@ -27,6 +27,10 @@ module GitHubChangelogGenerator
       @generator = Generator.new(@options)
     end
 
+    def get_options
+      @options
+    end
+
     # The entry point of this script to generate changelog
     # @raise (ChangelogGeneratorError) Is thrown when one of specified tags was not found in list of tags.
     def run
